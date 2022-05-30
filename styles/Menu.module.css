@@ -1,0 +1,38 @@
+
+.Menu {
+	width: 100px;
+	height: auto;
+	border: 1px solid #C7C7C7;
+	border-radius: 6px;
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	right: 3%;
+	top: calc(24px + 37px);
+	background: white;
+}
+.Menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.Menu ul li {
+	text-align: end;
+}
+.Menu ul li:nth-child(1),
+.Menu ul li:nth-child(2) {
+	font-weight: bold;
+}
+.Menu ul li:last-child {
+	padding-top: 20px;
+	border-top: 1px solid #C7C7C7;
+}
+.Menu ul li:last-child a {
+	color: #ACD9B2;
+	font-size: 14px;
+}
+.Menu ul li a {
+	color: #000000;
+	text-decoration: none;
+	margin-bottom: 20px;
+	display: inline-block;
+}
