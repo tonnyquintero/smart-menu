@@ -18,3 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
+h2 {
+	color: tomato;
+    font-weight: 700;
+}
