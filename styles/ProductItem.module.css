@@ -1,12 +1,13 @@
 
 .ProductItem {
-	width: 240px;
+	width: 260px;
 	display:inline-block;
+	border-radius: 20px;
 }
 .ProductItem img {
 	width: 240px;
 	height: 240px;
-	border-radius: 20px;
+	border-radius: 20px 20px 0px 0px;
 	object-fit: cover;
 }
 .product-info {
@@ -15,6 +16,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 4px;
+	height: 120px;
 }
 .product-info figure {
 	width: 30px;
@@ -39,6 +41,12 @@
 	color: red;
 	height: 50px;
 }
+.ProductItem:nth-child(odd) {
+	background-color:antiquewhite;
+	border-radius: 20px;
+}
+
+
 @media (max-width: 640px) {
 	.cards-container {
 		grid-template-columns: repeat(auto-fill, 140px);

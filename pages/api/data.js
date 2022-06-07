@@ -5,7 +5,7 @@ const data = [
         id: 1,
         images: '/images/lasagna.jpg',
         recomended: true,
-        price: 20000,
+        price: 22000,
     },
     {
         title: 'Carne',
@@ -37,7 +37,7 @@ const data = [
         id: 5,
         images: '/images/pastaPyCh.jpeg',
         recomended: true,
-        price: 20000,
+        price: 23000,
     },
     {
         title: 'Salsa Bolognesa',

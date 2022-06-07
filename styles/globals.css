@@ -21,4 +21,9 @@ a {
 h2 {
 	color: tomato;
     font-weight: 700;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+main {
+  margin: 0 1rem;
 }

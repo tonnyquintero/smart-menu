@@ -16,12 +16,14 @@ const ProductItem = ({ product }) => {
             <Image src={product.images} width={240} height={240} alt={product.title} />
             <div className={styles['product-info']}>
                 <div>
-                    <p>$ {product.price}</p>
+                    <div className="flex pb-0 pt-0 pr-2 pl-1">
+                        <p>$ {product.price}</p>
+                        <figure onClick={() => handleClick(product)}>
+                            <Image src={addToCartImage} alt="Add To Cart" />
+                        </figure>
+                    </div>
                     <p>{product.title}</p>
                 </div>
-                <figure onClick={() => handleClick(product)}>
-                    <Image src={addToCartImage} alt="Add To Cart" />
-                </figure>
             </div>
         </div>
     );
