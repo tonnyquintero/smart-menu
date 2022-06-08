@@ -60,7 +60,7 @@ margin: 0 1em 0 0;
 .navbar-shopping-cart {
 	position: relative;
 }
-.navbar-shopping-cart div {
+.navbar-shopping-cart {
 	width: 16px;
 	height: 16px;
 	background-color: #ACD9B2;

@@ -1,30 +1,30 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const initialState = {
-  cart: [],
+    cart: [],
 };
 
 const useInitialState = () => {
-  const [state, setState] = useState(initialState);
+    const [state, setState] = useState(initialState);
 
-  const addToCart = (payload) => {
-    setState({
-      ...state,
-      cart: [...state.cart, payload],
-    });
-  };
+    const addToCart = (payload) => {
+        setState({
+            ...state,
+            cart: [...state.cart, payload],
+        });
+    };
 
-  const removeFromCart = (indexValue) => {
-    setState({
-      ...state,
-      cart: state.cart.filter((items, index) => index !== indexValue),
-    });
-  };
+    const removeFromCart = (indexValue) => {
+        setState({
+            ...state,
+            cart: state.cart.filter((items, index) => index !== indexValue),
+        });
+    };
 
-  return {
-    state,
-    addToCart,
-    removeFromCart,
-  };
+    return {
+        state,
+        addToCart,
+        removeFromCart,
+    };
 };
 export default useInitialState;

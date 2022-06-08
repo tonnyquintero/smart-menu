@@ -1,4 +1,3 @@
-
 @keyframes swipeLeft {
 	0% {
 		width: 0%;
@@ -7,16 +6,15 @@
 		width: 360px;
 	}
 }
-
 .MyOrder {
 	width: 360px;
 	padding: 24px;
 	box-sizing: border-box;
 	position: absolute;
 	right: 0;
-	background-color: white;
-	top: 60px;
-	bottom: auto;
+	background-color:antiquewhite;
+	bottom: 60px;
+
 	border-radius: 6px;
 	border: 1px solid #C7C7C7;
 	animation: swipeLeft 0.26s ease;
