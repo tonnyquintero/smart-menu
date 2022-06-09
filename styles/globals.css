@@ -27,3 +27,10 @@ h2 {
 main {
   margin: 0 1rem;
 }
+button {
+  background-color:blueviolet;
+  border-radius: 45px;
+  width: 80px;
+  height: 30px;
+  color: aliceblue;
+}

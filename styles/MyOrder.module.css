@@ -19,7 +19,7 @@
 	border: 1px solid #C7C7C7;
 	animation: swipeLeft 0.26s ease;
 	overflow-y: auto;
-	height: 550px;
+	height: 680px;
 	z-index: 50;
 }
 .title-container {
@@ -56,8 +56,8 @@
 	font-weight: bold;
 }
 
-.primary-button {
-	background-color: #ACD9B2;
+.primaryButton {
+	background-color:red;
 	border-radius: 8px;
 	border: none;
 	color: #FFFFFF;

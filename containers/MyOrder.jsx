@@ -17,24 +17,31 @@ const MyOrder = () => {
 
     return (
         <div className={styles.MyOrder}>
-            <div className="title-container">
-                <Image src={flechita} alt="arrow" />
-                <p className="title">My order</p>
-            </div>
-            <div className="my-order-content">
-                {state.cart.map((item, index) => (
-                    <OrderItem indexValue={index} key={index} item={item} />
-                ))}
-                <div className="order">
-                    <p>
-                        <span>Total</span>
-                    </p>
-                    <p>${sumTotal()}</p>
-                </div>
-                <Link className={styles['primary-button']} href="/checkout">
-                    Checkout
-                </Link>
-            </div>
+            {state.cart.length > 0 ? (
+                <>
+                    <div className="title-container">
+                        <Image src={flechita} alt="arrow" />
+                        <p className="title">Mi Orden</p>
+                    </div>
+
+                    <div className="mb-5">
+                        {state.cart.map((item, index) => (
+                            <OrderItem indexValue={index} key={index} item={item} />
+                        ))}
+                        <div className="mb-5">
+                            <p>
+                                <span className="font-bold">Total</span>
+                            </p>
+                            <p className="font-bold">${sumTotal()}</p>
+                        </div>
+                        <Link href="/">
+                            <button>Enviar</button>
+                        </Link>
+                    </div>
+                </>
+            ) : (
+                <h1 className="font-bold">Aun no tienes ningun producto, Selecciona uno!</h1>
+            )}
         </div>
     );
 };
