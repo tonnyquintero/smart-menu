@@ -12,7 +12,6 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <h1 className="text-3xl text-red-500 pt-6 font-bold text-center pb-3">Bienvenidos</h1>
                 <ProductList />
             </main>
             <footer className={styles.footer}>

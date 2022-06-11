@@ -20,7 +20,7 @@
 	animation: swipeLeft 0.26s ease;
 	overflow-y: auto;
 	height: 680px;
-	z-index: 50;
+	z-index: 200;
 }
 .title-container {
 	display: flex;
@@ -67,6 +67,16 @@
 	font-weight: bold;
 	height: 50px;
 }
+
+.empty {
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	margin: -25px 0 0 -25px;
+}
+
 @media (max-width: 640px) {
 	.MyOrder {
 		width: 100%;

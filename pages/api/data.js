@@ -4,7 +4,7 @@ const data = [
         type: 'Lasagnas',
         id: 1,
         images: '/images/lasagna.jpg',
-        recomended: true,
+        recomended: false,
         price: 22000,
     },
     {

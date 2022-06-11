@@ -40,7 +40,9 @@ const MyOrder = () => {
                     </div>
                 </>
             ) : (
-                <h1 className="font-bold">Aun no tienes ningun producto, Selecciona uno!</h1>
+                <div className={styles.empty}>
+                    Aun no tienes ningun producto, Selecciona uno! <div>🔥🔥🔥</div>
+                </div>
             )}
         </div>
     );

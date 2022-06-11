@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductItem from '../components/ProductItem.jsx';
+import ProductItemHero from '../components/ProductItemHero.jsx';
 import useGetProducts from '../Hooks/useGetProducts';
 import styles from '../styles/ProductList.module.css';
 import data from '../pages/api/data.js';
@@ -10,13 +11,12 @@ const ProductList = () => {
     const products = useGetProducts(API);
     return (
         <section className={styles['main-container']}>
-            <h2>RECOMENDADOS</h2>
-            <div className={styles.ProductList}>
+            <div className={styles.ProductItemHero}>
                 {products
                     .filter((product) => product.recomended === true)
                     .map((filtrado) => {
                         if (filtrado.images.length > 0 && filtrado.images[0] !== '') {
-                            return <ProductItem product={filtrado} key={filtrado.id} />;
+                            return <ProductItemHero product={filtrado} key={filtrado.id} />;
                         }
                     })}
             </div>
