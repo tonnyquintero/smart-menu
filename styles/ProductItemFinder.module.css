@@ -1,9 +1,10 @@
 
 .ProductItemFinder {
 	width: 240px;
-	display:inline-block;
+	display: inline-grid;
     margin-left: 1.5rem;
     margin-right: auto;
+	padding-bottom: 30px;
 }
 .ProductItemFinder img {
 	width: 240px;
@@ -17,6 +18,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 4px;
+
 }
 .product-infoFinder figure {
 	width: 30px;
@@ -32,13 +34,15 @@
 	font-size: var(--md);
 	margin-top: 0;
 	margin-bottom: 0px;
+	height: 30px;
 }
 .product-infoFinder div p:nth-child(2) {
 	font-size: var(--sm);
 	text-align: center;
-	margin-top: 0;
+	margin-top: 10px;
 	margin-bottom: 0px;
-	color: red;
+	color: inherit;
+	font-weight: bold;
 	height: 50px;
 }
 @media (max-width: 640px) {

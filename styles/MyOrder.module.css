@@ -12,8 +12,9 @@
 	box-sizing: border-box;
 	position: absolute;
 	right: 0;
-	background-color:antiquewhite;
+	background-color: black;
 	bottom: 60px;
+	color: white;
 
 	border-radius: 6px;
 	border: 1px solid #C7C7C7;
@@ -22,6 +23,18 @@
 	height: 680px;
 	z-index: 200;
 }
+
+.close {
+	background-color: aqua;
+}
+
+.totalSum {
+	padding-bottom: 1em;
+	padding-top: 0.5em;
+	text-align: center;
+	font-size: larger;
+}
+
 .title-container {
 	display: flex;
 }
@@ -29,9 +42,13 @@
 	transform: rotate(180deg);
 	margin-right: 14px;
 }
-.title {
-	font-size: 18px;
+.tittle {
+	font-size: larger;
 	font-weight: bold;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	text-align: center;
+	color: #e5e338;
 }
 .order {
 	display: grid;

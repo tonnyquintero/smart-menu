@@ -32,9 +32,9 @@ function ProductFinder() {
     return (
         <div className=" pt-6">
             <div className="grid place-items-center pt-4 pb-2">
-                <input className=" p-3 text-center pb-2 rounded-full bg-red-100" placeholder="Busca tu Comida" value={busqueda} onChange={handleChange} />
+                <input className=" p-3 text-center pb-2 rounded-full bg-gray-500" placeholder="Busca tu Comida" value={busqueda} onChange={handleChange} />
             </div>
-            <h2 className="grid place-items-center text-red-400 pt-4 pb-4">PRODUCTOS</h2>
+            <h2 className="grid place-items-center font-bold text-black pt-2 pb-4 dark:text-primary">PRODUCTOS</h2>
             <div>
                 {usuarios &&
                     usuarios.map((filtrado) => {

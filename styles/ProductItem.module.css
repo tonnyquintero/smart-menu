@@ -26,25 +26,43 @@
 	width: 35px;
 	height: 35px;
 }
-.product-info div p:nth-child(1) {
+.product-info div p {
 	font-weight: bold;
 	text-align: center;
 	font-size: var(--md);
 	margin-top: 0;
 	margin-bottom: 0px;
 }
-.product-info div p:nth-child(2) {
+.product-info div h5 {
 	font-size: var(--sm);
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0px;
-	color: red;
 	height: 50px;
+
 }
 .ProductItem:nth-child(odd) {
-	background-color:antiquewhite;
+	background-color: #536363;
 	border-radius: 20px;
+	color: #e5e338;
+
 }
+
+.ProductItem h5:nth-child(odd) {
+	color: white;
+
+}
+
+.ProductItem:nth-child(even) {
+	border-radius: 20px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-width: 2px;
+
+}
+
+
 
 
 @media (max-width: 640px) {

@@ -18,19 +18,17 @@ a {
 * {
   box-sizing: border-box;
 }
-h2 {
-	color: tomato;
-    font-weight: 700;
-    padding-bottom: 0px;
-    padding-top: 10px;
-}
+
+
+
 main {
-  margin: 0 1rem;
+  margin: 0;
 }
 button {
   background-color:blueviolet;
   border-radius: 45px;
   width: 80px;
   height: 30px;
-  color: aliceblue;
+  color: white;
+  font-weight: bold;
 }

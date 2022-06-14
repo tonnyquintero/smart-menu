@@ -15,13 +15,15 @@ const ProductItem = ({ product }) => {
         <div className={styles.ProductItemFinder}>
             <Image src={product.images} width={240} height={240} alt={product.title} />
             <div className={styles['product-infoFinder']}>
-                <div>
+                <div className="flex pb-3 pt-1 pr-2 pl-1 mb-3 h-8">
                     <p>$ {product.price}</p>
+                    <figure onClick={() => handleClick(product)}>
+                        <Image src={addToCartImage} alt="Add To Cart" />
+                    </figure>
+                </div>
+                <div className="text-black dark:text-primary">
                     <p>{product.title}</p>
                 </div>
-                <figure onClick={() => handleClick(product)}>
-                    <Image src={addToCartImage} alt="Add To Cart" />
-                </figure>
             </div>
         </div>
     );

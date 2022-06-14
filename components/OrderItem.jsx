@@ -15,11 +15,11 @@ const OrderItem = (props) => {
     return (
         <div className={styles.OrderItem}>
             <figure>
-                <Image src={item?.images} width={50} height={50} alt={item?.title} />
+                <Image src={item?.images} width={70} height={70} alt={item?.title} />
             </figure>
             <p>{item?.title}</p>
             <p>${item?.price}</p>
-            <Image src={iconClose} width={20} height={20} alt="close" onClick={() => handleRemove(indexValue)} />
+            <Image src={iconClose} width={25} height={25} alt="close" onClick={() => handleRemove(indexValue)} />
         </div>
     );
 };

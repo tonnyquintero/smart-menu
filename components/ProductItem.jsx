@@ -22,7 +22,7 @@ const ProductItem = ({ product }) => {
                             <Image src={addToCartImage} alt="Add To Cart" />
                         </figure>
                     </div>
-                    <p>{product.title}</p>
+                    <h5>{product.title}</h5>
                 </div>
             </div>
         </div>

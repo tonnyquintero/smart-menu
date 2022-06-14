@@ -5,13 +5,15 @@
 	gap: 16px;
 	margin-bottom: 24px;
 	align-items: center;
+	font-weight: bold;
+	font-size: large;
 }
 .OrderItem figure {
 	margin: 0;
 }
 .OrderItem figure img {
-	width: 70px;
-	height: 70px;
+	width: 90px;
+	height: 90px;
 	border-radius: 20px;
 	object-fit: cover;
 }

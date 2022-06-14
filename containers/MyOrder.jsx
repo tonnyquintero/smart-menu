@@ -21,26 +21,29 @@ const MyOrder = () => {
                 <>
                     <div className="title-container">
                         <Image src={flechita} alt="arrow" />
-                        <p className="title">Mi Orden</p>
+                        <p className={styles.tittle}>Mi Orden</p>
                     </div>
 
                     <div className="mb-5">
                         {state.cart.map((item, index) => (
                             <OrderItem indexValue={index} key={index} item={item} />
                         ))}
-                        <div className="mb-5">
-                            <p>
-                                <span className="font-bold">Total</span>
+                        <div className={styles.totalSum}>
+                            <p className="pb-2">
+                                <span className="font-bold text-lg">Total</span>
                             </p>
-                            <p className="font-bold">${sumTotal()}</p>
+                            <p className="font-bold text-primary">$ {sumTotal()}</p>
                         </div>
-                        <Link href="/">
-                            <button>Enviar</button>
-                        </Link>
+                        <div className="text-center pt-2">
+                            <Link href="/">
+                                <button>Enviar</button>
+                            </Link>
+                        </div>
                     </div>
                 </>
             ) : (
                 <div className={styles.empty}>
+                    <Image src={flechita} alt="arrow" />
                     Aun no tienes ningun producto, Selecciona uno! <div>🔥🔥🔥</div>
                 </div>
             )}

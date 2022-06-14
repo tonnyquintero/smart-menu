@@ -6,8 +6,8 @@
 	position: fixed;
 	bottom: 0;
 	width: calc(100%);
-	background: black;
 	z-index: 2;
+	background-color: inherit;
 }
 .menu {
 	display: none;
