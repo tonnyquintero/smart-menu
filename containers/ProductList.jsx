@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Image from 'next/image.js';
+import dynamic from 'next/dynamic';
+const ProductListRandom = dynamic(() => import('./ProductListRandom'), {
+    ssr: false,
+});
 import ProductItem from '../components/ProductItem.jsx';
 import ProductItemHero from '../components/ProductItemHero.jsx';
+import Modal from '../components/Modal';
+//import ModalButton from '../components/ModalButton';
+import Random from '../assets/icons/random.png';
 import useGetProducts from '../Hooks/useGetProducts';
 import styles from '../styles/ProductList.module.css';
+import stylos from '../styles/ModalButton.module.css';
 import data from '../pages/api/data.js';
 
 const API = data;
 
 const ProductList = () => {
     const products = useGetProducts(API);
+    const [openModal, setOpenModal] = useState(false);
+
+    const onClickButton = () => {
+        if (openModal) {
+            setOpenModal(false);
+        } else {
+            setOpenModal(true);
+        }
+    };
+
     return (
         <>
             <div className={styles.ProductItemHero}>
@@ -62,6 +81,14 @@ const ProductList = () => {
                             }
                         })}
                 </div>
+                <button className={stylos.ModalButton} onClick={() => onClickButton()}>
+                    <Image src={Random} width={30} height={30}></Image>
+                </button>
+                {!!openModal && (
+                    <Modal selector="#modal" setOpenModal={setOpenModal} openModal={openModal}>
+                        <ProductListRandom />
+                    </Modal>
+                )}
             </section>
         </>
     );

@@ -13,7 +13,7 @@ const ProductItemHero = ({ product }) => {
 
     return (
         <div className={styles.ProductItemHero}>
-            <Image className={styles.Imagen} layout='fill' height={250} width={450} src={product.images} alt={product.title}></Image>
+            <Image className={styles.Imagen} layout="fill" priority={true} src={product.images} alt={product.title}></Image>
             <div className={styles.Content}>
                 <p>{product.title}</p>
             </div>
