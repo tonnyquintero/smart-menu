@@ -51,7 +51,12 @@ const Header = () => {
                         {state.cart.length > 0 ? <div className="bg-primary rounded-full w-5 h-6 text-black text-center ">{state.cart.length}</div> : null}
                     </li>
                 </div>
-                {toggleOrders && <MyOrder />}
+                {toggleOrders && (
+                    <>
+                    <button onClick={() => setToggleOrders(!toggleOrders)}>X</button>
+                        <MyOrder />
+                    </>
+                )}
             </nav>
         </div>
     );

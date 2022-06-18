@@ -86,6 +86,7 @@ const ProductList = () => {
                 </button>
                 {!!openModal && (
                     <Modal selector="#modal" setOpenModal={setOpenModal} openModal={openModal}>
+                        <button onClick={() => onClickButton()}>X</button>
                         <ProductListRandom />
                     </Modal>
                 )}
