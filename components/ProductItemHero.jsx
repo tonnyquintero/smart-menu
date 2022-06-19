@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Image from 'next/image';
 import AppContext from '../context/appContext';
-import shoppingHeroButton from '../assets/icons/shoppingHeroButton.jpg';
+import addToCartImage from '../assets/icons/bt_add_to_cart.svg';
 import styles from '../styles/ProductItemHero.module.css';
 
 const ProductItemHero = ({ product }) => {
@@ -20,7 +20,7 @@ const ProductItemHero = ({ product }) => {
 
             <div className={styles.ContentFigure}>
                 <figure onClick={() => handleClick(product)}>
-                    <Image src={shoppingHeroButton} width={40} height={40} alt="Add To Cart" />
+                    <Image src={addToCartImage} width={45} height={45} alt="Add To Cart" />
                 </figure>
             </div>
         </div>

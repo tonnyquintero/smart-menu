@@ -25,7 +25,7 @@
   z-index: 1;
   color: white;
   width: 360px;
-  text-shadow: 0 0 10px tomato, 2px 2px 4px black;
+  text-shadow: 0 0 10px gray, 2px 2px 4px black;
 }
 
 .ContentFigure img {

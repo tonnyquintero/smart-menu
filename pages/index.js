@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { ClipboardListIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
 import ProductList from '../containers/ProductList';
 import styles from '../styles/Home.module.css';
@@ -12,6 +13,10 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="bg-white dark:bg-black">
+                <div className=" flex justify-center h-12 fixed z-10 pt-2 bg-white dark:bg-black w-full">
+                    <ClipboardListIcon className=" w-6 h-6" />
+                    <h1 className="font-bold text-xl pl-1">Tu Restaurante</h1>
+                </div>
                 <ProductList />
             </main>
             <footer className={styles.footer}>

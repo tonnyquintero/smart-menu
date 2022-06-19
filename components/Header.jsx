@@ -28,6 +28,16 @@ const Header = () => {
 
     return (
         <div className="bg-black dark:bg-gray-700">
+            {toggleOrders && (
+                <>
+                    <div className={styles.CloseButtonContainer}>
+                        <button className={styles.CloseOrder} onClick={() => setToggleOrders(!toggleOrders)}>
+                            X
+                        </button>
+                    </div>
+                </>
+            )}
+
             <nav className={styles.Nav}>
                 <div className={styles['navbar-left']}>
                     <li>
@@ -53,7 +63,6 @@ const Header = () => {
                 </div>
                 {toggleOrders && (
                     <>
-                    <button onClick={() => setToggleOrders(!toggleOrders)}>X</button>
                         <MyOrder />
                     </>
                 )}

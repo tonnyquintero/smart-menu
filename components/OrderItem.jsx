@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Image from 'next/image';
 import AppContext from '../context/appContext';
-import iconClose from '../assets/icons/icon_close.png';
+import { TrashIcon } from '@heroicons/react/outline';
 import styles from '../styles/OrderItem.module.css';
 
 const OrderItem = (props) => {
@@ -19,7 +19,9 @@ const OrderItem = (props) => {
             </figure>
             <p>{item?.title}</p>
             <p>${item?.price}</p>
-            <Image src={iconClose} width={25} height={25} alt="close" onClick={() => handleRemove(indexValue)} />
+            <button className=" w-6 bg-inherit content-center justify-center" onClick={() => handleRemove(indexValue)}>
+                <TrashIcon className="h-8 w-8" />
+            </button>
         </div>
     );
 };

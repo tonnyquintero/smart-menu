@@ -1,9 +1,7 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import OrderItem from '../components/OrderItem.jsx';
 import AppContext from '../context/appContext';
-import flechita from '../assets/icons/flechita.svg';
 import styles from '../styles/MyOrder.module.css';
 
 const MyOrder = () => {
@@ -20,7 +18,6 @@ const MyOrder = () => {
             {state.cart.length > 0 ? (
                 <>
                     <div className="title-container">
-                        <Image src={flechita} alt="arrow" />
                         <p className={styles.tittle}>Mi Orden</p>
                     </div>
 
@@ -43,7 +40,6 @@ const MyOrder = () => {
                 </>
             ) : (
                 <div className={styles.empty}>
-                    <Image src={flechita} alt="arrow" />
                     Aun no tienes ningun producto, Selecciona uno! <div>🔥🔥🔥</div>
                 </div>
             )}
