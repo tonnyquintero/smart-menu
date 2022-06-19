@@ -33,9 +33,11 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #e5e338;
   justify-content: center;
   align-items: center;
+  color: #e5e338;
+  background-color: black;
 }
 
 .footer a {
@@ -130,4 +132,28 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loadingSpinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #e5e338;
+  border-top: 10px solid black; 
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinnerContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
 }
