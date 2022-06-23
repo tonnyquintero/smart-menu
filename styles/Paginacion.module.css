@@ -1,0 +1,19 @@
+.Paginacion {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 50px;
+    position: absolute;
+    top: 129px;
+    left: 12px;
+    font-weight: bold;
+    color: #FAFAFA;
+    display: flex;
+    gap: 270px;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    transform: rotate(0);
+    transition: .3s ease;
+    z-index: 1;
+}

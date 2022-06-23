@@ -27,8 +27,12 @@ main {
 button {
   background-color:blueviolet;
   border-radius: 45px;
-  width: 80px;
-  height: 50px;
+  width: 90px;
+  height: 30px;
   color: white;
   font-weight: bold;
+}
+
+button[disabled] {
+  background-color: darkgrey;
 }

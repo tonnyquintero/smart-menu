@@ -60,7 +60,7 @@ const data = [
         type: 'Pastas',
         id: 8,
         images: '/images/pasta3.jpeg',
-        recomended: false,
+        recomended: true,
         price: 20000,
     },
     {
@@ -69,7 +69,7 @@ const data = [
         id: 9,
         images: '/images/coca-cola .png',
         recomended: false,
-        price: 80000,
+        price: 8000,
     },
     {
         title: 'Limonada',
@@ -77,7 +77,7 @@ const data = [
         id: 10,
         images: '/images/limonada.png',
         recomended: false,
-        price: 70000,
+        price: 7000,
     },
     {
         title: 'Soda Saborizada',
@@ -85,7 +85,7 @@ const data = [
         id: 11,
         images: '/images/sodasSaborisadas.jpeg',
         recomended: false,
-        price: 90000,
+        price: 9000,
     },
     {
         title: 'Jugos Naturales',
@@ -93,7 +93,7 @@ const data = [
         id: 12,
         images: '/images/jugo.jpg',
         recomended: false,
-        price: 90000,
+        price: 9500,
     },
     {
         title: 'Artesanal',
