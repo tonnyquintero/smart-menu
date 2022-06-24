@@ -7,7 +7,7 @@ import { ThemeProvider } from 'next-themes';
 function MyApp({ Component, pageProps }) {
     const initialState = useInitialState();
     return (
-        <ThemeProvider enableSystem={false} attribute="class">
+        <ThemeProvider attribute="class">
             <AppContext.Provider value={initialState}>
                 <Header />
                 <Component {...pageProps} />
