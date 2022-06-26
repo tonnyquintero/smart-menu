@@ -89,7 +89,7 @@ margin: 0 1em 0 0;
 .CloseButtonContainer {
 	background-color: black;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	width: 100%;
 	height: 80px;
 }

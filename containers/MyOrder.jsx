@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
 import OrderItem from '../components/OrderItem.jsx';
+import { PhoneIcon } from '@heroicons/react/outline';
 import AppContext from '../context/appContext';
 import styles from '../styles/MyOrder.module.css';
 
@@ -31,9 +32,9 @@ const MyOrder = () => {
                             </p>
                             <p className="font-bold text-primary">$ {sumTotal()}</p>
                         </div>
-                        <div className="text-center pt-2">
-                            <Link href="/">
-                                <button>Enviar</button>
+                        <div className="pt-2">
+                            <Link href="https://api.whatsapp.com/send?phone=573234257398&text=hola,%20quiero%20enviarte%20esta%20imagen%20con%20mi%20pedido">
+                                <button className=" flex pl-2 gap-1 ml-auto mr-auto"><PhoneIcon className=" flex w-4 h-7"/> Enviar</button>
                             </Link>
                         </div>
                     </div>
