@@ -51,7 +51,7 @@ const ProductList = () => {
             {isOpen && <Paginacion selector="#botones" setIsOpen={setIsOpen} isOpen={isOpen} plato={plato} setPlato={setPlato} maximo={maximo} />}
 
             <section className={styles['main-container']}>
-                <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary">LASAGNAS</h2>
+                <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary">EJEMPLO DE LASAGNAS</h2>
                 <div className={styles.ProductList}>
                     {products
                         .filter((product) => product.type === 'Lasagnas')
@@ -61,7 +61,7 @@ const ProductList = () => {
                             }
                         })}
                 </div>
-                <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary">PASTAS</h2>
+                <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary">EJEMPLO DE PASTAS</h2>
                 <div className={styles.ProductList}>
                     {products
                         .filter((product) => product.type === 'Pastas')
@@ -71,7 +71,7 @@ const ProductList = () => {
                             }
                         })}
                 </div>
-                <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary">HAMBURGUESAS</h2>
+                <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary">EJEMPLO DE HAMBURGUESAS</h2>
                 <div className={styles.ProductList}>
                     {products
                         .filter((product) => product.type === 'Hamburguesas')
@@ -81,7 +81,7 @@ const ProductList = () => {
                             }
                         })}
                 </div>
-                <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary">BEBIDAS</h2>
+                <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary">EJEMPLO DE BEBIDAS</h2>
                 <div className={styles.ProductList}>
                     {products
                         .filter((product) => product.type === 'Bebidas')

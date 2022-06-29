@@ -27,7 +27,7 @@ export default function Home() {
                     <>
                         <div className=" flex justify-center h-12 fixed z-10 pt-2 bg-white dark:bg-black w-full">
                             <ClipboardListIcon className=" w-6 h-6" />
-                            <h1 className="font-bold text-xl pl-1">Tu Restaurante</h1>
+                            <h1 className="font-bold text-xl pl-1">Tu Nombre de Restaurante</h1>
                         </div>
 
                         <ProductList />
