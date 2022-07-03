@@ -23,7 +23,7 @@ const ProductListRandom = () => {
     return (
         <>
             <h2 className="mb-3 mt-8 text-center text-white text-xl font-bold">PEDIDO ALEATORIO</h2>
-            <div className="flex pl-7 pt-3">
+            <div className="flex justify-center pt-3">
                 <div className={styles.ProductList}>{<ProductItem product={rValueuu} key={rValueuu.id} />}</div>
                 <div className={styles.ProductList}>{<ProductItem product={rValue} key={rValue.id} />}</div>
             </div>

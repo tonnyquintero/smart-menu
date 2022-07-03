@@ -41,3 +41,10 @@
     margin-bottom: 30px;
     margin-top: 50px;
 }
+
+@media screen and (min-width: 820px)
+ {
+    .ProductItemHero {
+        display: none;
+    }
+}

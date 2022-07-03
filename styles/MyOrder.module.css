@@ -15,12 +15,11 @@
 	background-color: black;
 	bottom: 60px;
 	color: white;
-
 	border-radius: 6px;
 	border: 0 1px 1px 1px solid #C7C7C7;
 	animation: swipeLeft 0.26s ease;
 	overflow-y: auto;
-	height: 610px;
+	height: 670px;
 	z-index: 200;
 }
 

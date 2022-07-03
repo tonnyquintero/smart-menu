@@ -36,12 +36,14 @@ function ProductFinder() {
             </div>
             <h2 className="grid place-items-center font-bold text-black pt-2 pb-4 dark:text-primary">PRODUCTOS</h2>
             <div>
+            <div className="grid grid-cols-2 md:grid-cols-4">
                 {usuarios &&
                     usuarios.map((filtrado) => {
                         if (filtrado.images.length > 0 && filtrado.images[0] !== '') {
                             return <ProductItemFinder product={filtrado} key={filtrado.id} />;
                         }
                     })}
+            </div>
             </div>
         </div>
     );

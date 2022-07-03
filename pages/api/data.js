@@ -32,6 +32,14 @@ const data = [
         price: 22000,
     },
     {
+        title: 'camarones',
+        type: 'Lasagnas',
+        id: 17,
+        images: '/images/lasagna.jpg',
+        recomended: false,
+        price: 22000,
+    },
+    {
         title: 'Pollo con Camarones',
         type: 'Pastas',
         id: 5,
@@ -62,6 +70,14 @@ const data = [
         images: '/images/pasta3.jpeg',
         recomended: true,
         price: 20000,
+    },
+    {
+        title: 'Capresa',
+        type: 'Pastas',
+        id: 18,
+        images: '/images/pastaPyCh.jpeg',
+        recomended: true,
+        price: 23000,
     },
     {
         title: 'Coca - Cola',
@@ -96,6 +112,14 @@ const data = [
         price: 9500,
     },
     {
+        title: 'Coca - Cola Light',
+        type: 'Bebidas',
+        id: 19,
+        images: '/images/coca-cola .png',
+        recomended: false,
+        price: 8000,
+    },
+    {
         title: 'Artesanal',
         type: 'Hamburguesas',
         id: 13,
@@ -126,6 +150,14 @@ const data = [
         images: '/images/hamburguesa3.jpg',
         recomended: true,
         price: 23000,
+    },
+    {
+        title: 'Vegetariana',
+        type: 'Hamburguesas',
+        id: 20,
+        images: '/images/hArtesanal1.jpeg',
+        recomended: true,
+        price: 22000,
     },
 ];
 

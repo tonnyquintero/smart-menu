@@ -17,8 +17,11 @@
 }
 
 
-@media (max-width: 640px) {
-	.ProductList {
-		grid-template-columns: repeat(auto-fill, 140px);
+@media screen and (min-width: 820px)
+ {
+    .ProductList {
+		display: flex;
+		justify-content: space-around;
+		
 	}
 }

@@ -59,7 +59,7 @@ const MyOrder = () => {
                             <OrderItemSend indexValue={index} key={index} item={item} />
                         ))}
                     </div>
-                        <Link href={`https://api.whatsapp.com/send?phone=573234257398&text=${saludo},%20quiero%20enviarte%20esta%20imagen%20con%20mi%20pedido`}>
+                        <Link href={`https://api.whatsapp.com/send?phone=573054364206&text=${saludo},%20quiero%20enviarte%20esta%20imagen%20con%20mi%20pedido`}>
                             <button className=" flex pl-2 gap-1 ml-auto mr-auto"><PhoneIcon className=" flex w-4 h-7"/> Listo</button>
                         </Link>
                        </div>
@@ -68,7 +68,7 @@ const MyOrder = () => {
                 </>
             ) : (
                 <div className={styles.empty}>
-                    Aun no tienes ningun producto, Selecciona uno! <div>🔥🔥🔥</div>
+                    <h2 className="pl-3 pr-3">Aun no tienes ningun producto, Selecciona uno!</h2> <div>🔥🔥🔥</div>
                 </div>
             )}
         </div>

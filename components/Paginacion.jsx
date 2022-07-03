@@ -21,10 +21,10 @@ const Paginacion = ({ isOpen, setIsOpen, children, plato, setPlato, maximo, sele
         return ReactDOM.createPortal(
             <div className={styles.Paginacion}>
                 {(isOpen, setIsOpen, children)}
-                <button className=" bg-slate-500 mt-10" disabled={plato === 1 || plato < 1} onClick={prevPage}>
+                <button className=" bg-slate-500 mt-10 w-6" disabled={plato === 1 || plato < 1} onClick={prevPage}>
                     <ChevronLeftIcon className="w-6 h-6" />
                 </button>
-                <button className=" bg-slate-500 mt-10 ml-2" disabled={plato === Math.ceil(maximo) || plato > Math.ceil(maximo)} onClick={nextPage}>
+                <button className=" bg-slate-500 mt-10 w-6" disabled={plato === Math.ceil(maximo) || plato > Math.ceil(maximo)} onClick={nextPage}>
                     <ChevronRightIcon className="w-6 h-6" />
                 </button>
             </div>,
