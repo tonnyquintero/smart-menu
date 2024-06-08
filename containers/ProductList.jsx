@@ -5,7 +5,8 @@ const ProductListRandom = dynamic(() => import('./ProductListRandom'), {
     ssr: false,
 });
 import ProductItem from '../components/ProductItem.jsx';
-import ProductItemHero from '../components/ProductItemHero.jsx';
+import Hero from '../components/Hero.jsx';
+// import ProductItemHero from '../components/ProductItemHero.jsx';
 import Modal from '../components/Modal';
 //import ModalButton from '../components/ModalButton';
 import Random from '../assets/icons/random.png';
@@ -13,14 +14,14 @@ import useGetProducts from '../Hooks/useGetProducts';
 import styles from '../styles/ProductList.module.css';
 import stylos from '../styles/ModalButton.module.css';
 import data from '../pages/api/data.js';
-import Paginacion from '../components/Paginacion.jsx';
+// import Paginacion from '../components/Paginacion.jsx';
 
 const API = data;
 
 const ProductList = () => {
     const products = useGetProducts(API);
     const [openModal, setOpenModal] = useState(false);
-    const [isOpen, setIsOpen] = useState(true);
+    // const [isOpen, setIsOpen] = useState(true);
 
     const onClickButton = () => {
         if (openModal) {
@@ -30,14 +31,14 @@ const ProductList = () => {
         }
     };
 
-    const [plato, setPlato] = useState(1);
-    const [porPlato] = useState(1);
+    // const [plato, setPlato] = useState(1);
+    // const [porPlato] = useState(1);
 
-    const maximo = 4;
+    // const maximo = 4;
 
     return (
         <>
-            <div className={styles.ProductItemHero}>
+            {/* <div className={styles.ProductItemHero}>
                 {products
                     .filter((product) => product.recomended === true)
                     .slice((plato - 1) * porPlato, (plato - 1) * porPlato + porPlato)
@@ -46,9 +47,11 @@ const ProductList = () => {
                             return <ProductItemHero product={filtrado} key={filtrado.id} />;
                         }
                     })}
-            </div>
+            </div> */}
 
-            {isOpen && <Paginacion selector="#botones" setIsOpen={setIsOpen} isOpen={isOpen} plato={plato} setPlato={setPlato} maximo={maximo} />}
+           {/* {isOpen && <Paginacion selector="#botones" setIsOpen={setIsOpen} isOpen={isOpen} plato={plato} setPlato={setPlato} maximo={maximo} />}  */}
+
+            <Hero />
 
             <section className={styles['main-container']}>
                 <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary md:text-center md:pt-14 md:pb-4 ">EJEMPLO DE LASAGNAS</h2>
@@ -92,11 +95,11 @@ const ProductList = () => {
                         })}
                 </div>
                 <button className={stylos.ModalButton} onClick={() => onClickButton()}>
-                    <Image src={Random} width={30} height={30}></Image>
+                    <Image alt='' src={Random} width={30} height={30}></Image>
                 </button>
                 {!!openModal && (
                     <Modal selector="#modal" setOpenModal={setOpenModal} openModal={openModal}>
-                        <button className="ml-4 w-12 mt-36 bg-inherit" onClick={() => onClickButton()}>
+                        <button className="ml-4 w-12 mt-36 bg-red-600" onClick={() => onClickButton()}>
                             X
                         </button>
                         <ProductListRandom />

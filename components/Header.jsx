@@ -20,7 +20,7 @@ const Header = () => {
         const currentTheme = theme === 'system' ? systemTheme : theme;
 
         if (currentTheme === 'dark') {
-            return <SunIcon className="w-9 h-9 pb-2 text-primary " role="button" onClick={() => setTheme('light')} />;
+            return <SunIcon className="w-9 h-9 pb-2 text-yellow-300 " role="button" onClick={() => setTheme('light')} />;
         } else {
             return <MoonIcon className="w-9 h-9 pb-2 text-white" role="button" onClick={() => setTheme('dark')} />;
         }

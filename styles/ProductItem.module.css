@@ -44,7 +44,7 @@
 .ProductItem:nth-child(odd) {
 	background-color: #536363;
 	border-radius: 20px;
-	color: #e5e338;
+	color: white;
 
 }
 

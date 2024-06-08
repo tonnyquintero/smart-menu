@@ -27,7 +27,7 @@ const ProductListRandom = () => {
                 <div className={styles.ProductList}>{<ProductItem product={rValueuu} key={rValueuu.id} />}</div>
                 <div className={styles.ProductList}>{<ProductItem product={rValue} key={rValue.id} />}</div>
             </div>
-            <button className="bg-inherit mt-10 ml-4 w-12" onClick={setOpenModal}>
+            <button className="bg-inherit mt-10 ml-4 w-12 bg-lime-400" onClick={setOpenModal}>
                 <RefreshIcon className="w-6 h-6 ml-3" />
             </button>
         </>
