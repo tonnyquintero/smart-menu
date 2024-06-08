@@ -4,6 +4,8 @@
     font-size: x-large;
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-left: .2em;
+    padding-right: .2em;
     width: 100%;
     position: sticky;
     top: 0;
@@ -34,6 +36,7 @@
       align-items: center;
       min-height: 50vh;
       transform-style: preserve-3d;
+      overflow: auto;
   }
   .box {
       position: relative;
@@ -90,7 +93,7 @@
   
     .buttons {
       position: absolute;
-      bottom: -55px;
+      bottom: 0px;
       display: flex;
       gap: 40px;
     }
@@ -104,9 +107,10 @@
       cursor: pointer;
       display: flex;
       justify-content: center;
+      background: rgb(158, 63, 254);
       align-items: center;
       opacity: 1;
-      box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+      box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.8);
 
     }
   
@@ -123,7 +127,7 @@
       width: 50px;
       height: 50px;
       border: 2px solid white;
-      background-color: rebeccapurple;
+      background-color: rgb(158, 63, 254);
       border-radius: 50%;
       cursor: pointer;
       display: flex;
@@ -138,7 +142,7 @@
       width: 50px;
       height: 50px;
       border: 2px solid white;
-      background-color: rebeccapurple;
+      background-color: rgb(158, 63, 254);
       border-radius: 50%;
       cursor: pointer;
       display: flex;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
+import Hero from '../components/Hero.jsx';
 
 import { ClipboardListIcon } from '@heroicons/react/solid';
 
@@ -29,7 +30,7 @@ export default function Home() {
                             <ClipboardListIcon className=" w-6 h-6" />
                             <h1 className="font-bold text-xl pl-1">Tu Nombre de Restaurante</h1>
                         </div> */}
-
+                        <Hero />
                         <ProductList />
                     </>
                 ) : (

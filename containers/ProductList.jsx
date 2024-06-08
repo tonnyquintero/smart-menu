@@ -5,7 +5,7 @@ const ProductListRandom = dynamic(() => import('./ProductListRandom'), {
     ssr: false,
 });
 import ProductItem from '../components/ProductItem.jsx';
-import Hero from '../components/Hero.jsx';
+
 // import ProductItemHero from '../components/ProductItemHero.jsx';
 import Modal from '../components/Modal';
 //import ModalButton from '../components/ModalButton';
@@ -51,7 +51,6 @@ const ProductList = () => {
 
            {/* {isOpen && <Paginacion selector="#botones" setIsOpen={setIsOpen} isOpen={isOpen} plato={plato} setPlato={setPlato} maximo={maximo} />}  */}
 
-            <Hero />
 
             <section className={styles['main-container']}>
                 <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary md:text-center md:pt-14 md:pb-4 ">EJEMPLO DE LASAGNAS</h2>
