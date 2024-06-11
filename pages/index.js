@@ -37,7 +37,7 @@ export default function Home() {
                     <>
                         <div className=" flex justify-center h-12 fixed z-10 pt-2 bg-white dark:bg-black w-full">
                             <ClipboardListIcon className=" text-primary w-6 h-6" />
-                            <h1 className="text-primary text-center font-bold">BIENVENIDOS...</h1>
+                            <h1 className="text-white text-center font-bold">BIENVENIDOS...</h1>
                         </div>
 
                         <div className={styles.spinnerContainer}>

@@ -2,8 +2,7 @@
     color: white;
     text-align: center;
     font-size: x-large;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: .5em;
     padding-left: .2em;
     padding-right: .2em;
     width: 100%;
@@ -34,7 +33,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 50vh;
+      min-height: 56vh;
       transform-style: preserve-3d;
       overflow: auto;
   }
@@ -56,7 +55,6 @@
       transform-style: preserve-3d;
       transform-origin: bottom;
       user-select: none;
-      -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0002);
   
   }
   
@@ -93,7 +91,7 @@
   
     .buttons {
       position: absolute;
-      bottom: 0px;
+      bottom: 20px;
       display: flex;
       gap: 40px;
     }
