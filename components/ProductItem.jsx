@@ -13,16 +13,16 @@ const ProductItem = ({ product }) => {
 
     return (
         <div className={styles.ProductItem}>
-            <Image src={product.images} width={240} height={240} alt={product.title} />
+            <Image src={product.images} width={220} height={220} alt={product.title} />
             <div className={styles['product-info']}>
                 <div>
-                    <div className="flex pb-0 pt-0 pr-2 pl-1">
+                    <div className="flex pb-0 pt-8 pr-2 pl-1">
                         <p>$ {product.price}</p>
-                        <figure onClick={() => handleClick(product)}>
-                            <Image src={addToCartImage} alt="Add To Cart" />
-                        </figure>
                     </div>
                     <h5>{product.title}</h5>
+                        <figure onClick={() => handleClick(product)}>
+                            <Image className={styles['carrito']} src={addToCartImage} alt="Add To Cart" />
+                        </figure>
                 </div>
             </div>
         </div>

@@ -81,9 +81,12 @@ margin: 0 1em 0 0;
 }
 
 .CloseOrder {
-	background-color: black;
-	margin-top: 27px;
-	height: 70px;
+	margin-top: 73px;
+	height: 86px;
+	font-size: xx-large;
+	z-index: 100;
+	color: red;
+	font-weight: 900;
 }
 
 .CloseButtonContainer {

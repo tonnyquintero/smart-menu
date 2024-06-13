@@ -1,14 +1,14 @@
 .mainTittle {
-    color: white;
     text-align: center;
     font-size: x-large;
     padding-top: .5em;
     padding-left: .2em;
+    font-weight: 700;
     padding-right: .2em;
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 99;
   
     animation: fix-header linear both;
     animation-timeline: scroll(root block);
@@ -24,7 +24,6 @@
   }
   
 .subtitle {
-    color: white;
     text-align: center;
     opacity: .7;
   }
