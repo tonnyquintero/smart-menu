@@ -47,8 +47,11 @@ export default function Home() {
                 )}
             </main>
             <footer className={styles.footer}>
-                <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" target="_blank" rel="noopener noreferrer">
-                    Desarrolado por Tonnys LAB{' '}
+                <a href="https://www.instagram.com/anthonnyy_quintero?igsh=dXgwcWx6N3dzaDF1" target="_blank" rel="noopener noreferrer">
+                    Desarrolado por Tonnys LAB{' '} 
+                </a>
+                <a href="https://www.instagram.com/anthonnyy_quintero?igsh=dXgwcWx6N3dzaDF1" target="_blank" rel="noopener noreferrer">
+                    Click aqui para contacto 
                 </a>
             </footer>
         </div>

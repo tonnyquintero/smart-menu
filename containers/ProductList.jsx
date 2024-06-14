@@ -63,7 +63,7 @@ const ProductList = () => {
                             }
                         })}
                 </div>
-                <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary md:text-center md:pt-14 md:pb-4 ">LASAGNAS</h2>
+                <h2 className="text-black pt-2 ml-2 mb-2 font-bold dark:text-primary md:text-center md:pt-14 md:pb-4 ">COMIDAS</h2>
                 <div className={styles.ProductList}>
                     {products
                         .filter((product) => product.type === 'Lasagnas')

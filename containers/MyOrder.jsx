@@ -47,7 +47,7 @@ const MyOrder = () => {
                             <p className="font-bold text-primary">$ {sumTotal()}</p>
                         </div>
                         <div className="pt-2">
-                                <button className=" flex pl-2 gap-1 ml-auto mr-auto" onClick={() => onClickButton()}><PhoneIcon className=" flex w-4 h-7"/> Enviar</button>
+                                <button className=" flex pl-2 gap-1 ml-auto mr-auto bg-green-500" onClick={() => onClickButton()}><PhoneIcon className=" flex w-4 h-7"/> Enviar</button>
                         </div>
                     </div>
                     {!!openModalOrder && (
@@ -60,7 +60,7 @@ const MyOrder = () => {
                         ))}
                     </div>
                         <Link href={`https://api.whatsapp.com/send?phone=573054364206&text=${saludo},%20quiero%20enviarte%20esta%20imagen%20con%20mi%20pedido`}>
-                            <button className=" flex pl-2 gap-1 ml-auto mr-auto"><PhoneIcon className=" flex w-4 h-7"/> Listo</button>
+                            <button className=" flex pl-2 gap-1 ml-auto mr-auto bg-green-500"><PhoneIcon className=" flex w-4 h-7"/> Listo</button>
                         </Link>
                        </div>
                     </ModalOrder>

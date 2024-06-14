@@ -60,7 +60,7 @@ const Hero = () => {
                     <a href="https://platzi.com/"><Image alt='food' width={250} height={400} src="/img1.png"/></a>
                 </div>   
                 <div className={styles.item}>
-                    <a href="https://platzi.com/"><Image alt='food' width={250} height={400} src='/img2.png'/></a>
+                    <a href="https://www.instagram.com/ar/7779830152133807/?ch=ODk2YjNkZDE2ZDQ1YWIwMTJiODBhN2FjMzIzYWVlMGI%3D"><Image alt='food' width={250} height={400} src='/img2.png'/></a>
                 </div>
                 <div className={styles.item}>
                     <a href="https://platzi.com/"><Image alt='food' width={250} height={400} src="/img3.png"/></a>

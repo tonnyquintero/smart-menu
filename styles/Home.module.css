@@ -30,14 +30,16 @@
 }
 
 .footer {
-  display: flex;
+
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #e5e338;
+  padding: .5rem 0;
+  border-top: 1px solid white;
   justify-content: center;
   align-items: center;
-  color: #e5e338;
+  color: white;
   background-color: black;
+  margin-bottom: 4.2em;
+  font-size: smaller;
 }
 
 .footer a {
