@@ -60,22 +60,22 @@ const Hero = () => {
                     <a href="https://platzi.com/"><Image alt='food' width={250} height={400} src="/img1.png"/></a>
                 </div>   
                 <div className={styles.item}>
-                    <a href="https://www.instagram.com/ar/7779830152133807/?ch=ODk2YjNkZDE2ZDQ1YWIwMTJiODBhN2FjMzIzYWVlMGI%3D"><Image alt='food' width={250} height={400} src='/img2.png'/></a>
+                    <a href="https://www.instagram.com/ar/844462340890947/"><Image alt='hamburguesa' width={250} height={400} src='/img2.png'/></a>
                 </div>
                 <div className={styles.item}>
-                    <a href="https://platzi.com/"><Image alt='food' width={250} height={400} src="/img3.png"/></a>
+                    <a href="https://platzi.com/"><Image alt='waffles' width={250} height={400} src="/img3.png"/></a>
                 </div>
                 <div className={styles.item}>
-                    <a href="https://platzi.com/"><Image alt='food' width={250} height={400} src="/img4.png"/></a>
+                    <a href="https://platzi.com/"><Image alt='risotto' width={250} height={400} src="/img4.png"/></a>
                 </div>
                 <div className={styles.item}>
-                    <a href="https://platzi.com/"><Image alt='food' width={250} height={400} src="/img5.png"/></a>
+                    <a href="https://platzi.com/"><Image alt='beef' width={250} height={400} src="/img5.png"/></a>
                 </div>
                 <div className={styles.item}>
-                    <a href="https://platzi.com/"><Image alt='food' width={250} height={400} src="/img6.png"/></a>
+                    <a href="https://platzi.com/"><Image alt='ensalada' width={250} height={400} src="/img6.png"/></a>
                 </div>
                 <div className={styles.item}>
-                    <a href="https://platzi.com/"><Image alt='food' width={250} height={400} src="/img7.png"/></a>
+                    <a href="https://platzi.com/"><Image alt='arroz' width={250} height={400} src="/img7.png"/></a>
                 </div>
         </div>
 
