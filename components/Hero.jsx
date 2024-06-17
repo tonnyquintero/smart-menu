@@ -57,7 +57,7 @@ const Hero = () => {
     <section className={styles.recomends}>
         <div ref={boxRef} className={styles.box}>
                 <div className={styles.item}>
-                    <a href="https://radiant-dodol-a06e85.netlify.app/"><Image alt='food' width={250} height={400} src="/img1.png"/></a>
+                    <a href="https://radiant-dodol-a06e85.netlify.app/"><Image alt='pasta' width={250} height={400} src="/img1.png"/></a>
                 </div>   
                 <div className={styles.item}>
                     <a href="https://www.instagram.com/ar/844462340890947/"><Image alt='hamburguesa' width={250} height={400} src='/img2.png'/></a>
