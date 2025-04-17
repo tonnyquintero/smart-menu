@@ -59,12 +59,12 @@ const Hero = () => {
                         </a>
                     </div>
                     <div className={styles.item}>
-                        <a href="https://mywebar.com/p/Project_0_al8zc41elw">
+                        <a href="https://mywebar.com/p/Project_4_7poaqq8i2h">
                             <Image alt="hamburguesa" width={250} height={400} src="/img2.png" />
                         </a>
                     </div>
                     <div className={styles.item}>
-                        <a href="https://mywebar.com/p/Project_2_vbgh7nwo8n">
+                        <a href="https://mywebar.com/p/Project_4_nk3w6q16oa">
                             <Image alt="waffles" width={250} height={400} src="/img3.png" />
                         </a>
                     </div>
@@ -84,7 +84,7 @@ const Hero = () => {
                         </a>
                     </div>
                     <div className={styles.item}>
-                        <a href="https://mywebar.com/p/Project_3_elrnmlxp9o">
+                        <a href="https://mywebar.com/p/Project_4_s65iqeqzm">
                             <Image alt="arroz" width={250} height={400} src="/img7.png" />
                         </a>
                     </div>
