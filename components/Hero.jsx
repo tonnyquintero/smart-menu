@@ -84,7 +84,7 @@ const Hero = () => {
                         </a>
                     </div>
                     <div className={styles.item}>
-                        <a href="https://mywebar.com/p/Project_4_s65iqeqzm">
+                        <a href="https://mywebar.com/p/Project_3_elrnmlxp9o">
                             <Image alt="arroz" width={250} height={400} src="/img7.png" />
                         </a>
                     </div>
