@@ -85,7 +85,7 @@ const Hero = () => {
                     </div>
                     <div className={styles.item}>
                         <a href="https://mywebar.com/p/Project_3_elrnmlxp9o">
-                            <Image alt="arroz" width={250} height={400} src="/img7.png" />
+                            <Image alt="hamburguesa2" width={250} height={400} src="/img7.png" />
                         </a>
                     </div>
                 </div>
